@@ -1,0 +1,38 @@
+$sideBarSize: 280px;
+.app {
+  position: relative;
+  height: 100%;
+
+  .contentContainer {
+    // min-height: 692px;
+    // margin: 0 0 0 220px;
+    padding-left: $sideBarSize + 15px;
+    overflow-y: scroll;
+    height: 100%;
+    &.fullWidth {
+      margin: 0;
+    }
+    // padding: 0 10px;
+    position: relative !important;
+  }
+}
+.progressBar {
+  height: 5px !important;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  background-color: transparent;
+}
+
+.appContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.8rem;
+  width: 100%;
+  // margin: 10px 0; // for fixed navbar
+}

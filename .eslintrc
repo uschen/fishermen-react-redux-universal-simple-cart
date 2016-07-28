@@ -1,0 +1,63 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-airbnb",
+  "env"     : {
+    "browser" : true,
+    "es6": true,
+    "node": true,
+    "mocha"   : true
+  },
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    },
+    "import/ignore": [
+      "\\.scss$"
+    ]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/no-multi-comp": 0,
+    "react/display-name": 1,
+    "react/prefer-stateless-function": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "no-param-reassign": [2, { "props": false}],
+    "jsx-quotes": [2, "prefer-single"],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-alert": 0,
+    "space-before-function-paren": [2, {"anonymous": "never", "named": "never"}],
+    "arrow-spacing": 1,
+    "space-before-blocks": 1,
+    "no-spaced-func": 1,
+    "curly": 1,
+    "comma-dangle": [2, "always-multiline"],
+    "new-cap": ["error", { "capIsNew": false }]
+  },
+  "plugins": [
+    "react", "import"
+  ],
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NEW_WINDOW__" : false,
+    "__BASENAME__" : false,
+    "__CLIENT__": false,
+    "__LOGGER__": false,
+    "__DEVTOOLS__": false,
+    "expect": true,
+    "should": true
+  },
+}
