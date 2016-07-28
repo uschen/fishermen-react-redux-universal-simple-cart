@@ -5,6 +5,7 @@ npm install
 MONGODB_URI=mongodb://127.0.0.1 npm run dev
 
 ```
+
 open url: http://localhost:3000/products
 
 ## Known issues
